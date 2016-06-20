@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"blink\startup_stm32f103xb.o"
+"blink\stm32f1xx_it.o"
+"blink\main.o"
+"blink\stm32f1xx_hal_msp.o"
+"blink\system_stm32f1xx.o"
+"blink\stm32f1xx_hal_tim_ex.o"
+"blink\stm32f1xx_hal_rcc.o"
+"blink\stm32f1xx_hal_gpio.o"
+"blink\stm32f1xx_hal_rcc_ex.o"
+"blink\stm32f1xx_hal.o"
+"blink\stm32f1xx_hal_cortex.o"
+"blink\stm32f1xx_hal_flash_ex.o"
+"blink\stm32f1xx_hal_dma.o"
+"blink\stm32f1xx_hal_pwr.o"
+"blink\stm32f1xx_hal_flash.o"
+"blink\stm32f1xx_hal_tim.o"
+--library_type=microlib --strict --scatter "Blink\Blink.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Blink.map" -o Blink\Blink.axf

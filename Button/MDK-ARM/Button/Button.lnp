@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"button\startup_stm32f103xb.o"
+"button\stm32f1xx_hal_rcc.o"
+"button\stm32f1xx_hal_tim.o"
+"button\stm32f1xx_hal_pwr.o"
+"button\stm32f1xx_hal_flash.o"
+"button\stm32f1xx_hal_dma.o"
+"button\stm32f1xx_hal_gpio.o"
+"button\stm32f1xx_hal_cortex.o"
+"button\stm32f1xx_hal_flash_ex.o"
+"button\stm32f1xx_hal_tim_ex.o"
+"button\stm32f1xx_hal_rcc_ex.o"
+"button\stm32f1xx_hal.o"
+"button\system_stm32f1xx.o"
+"button\stm32f1xx_it.o"
+"button\main.o"
+"button\stm32f1xx_hal_msp.o"
+--library_type=microlib --strict --scatter "Button\Button.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Button.map" -o Button\Button.axf

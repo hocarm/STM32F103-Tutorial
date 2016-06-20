@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"timer3\startup_stm32f103xb.o"
+"timer3\stm32f1xx_hal_flash_ex.o"
+"timer3\stm32f1xx_hal_cortex.o"
+"timer3\stm32f1xx_hal.o"
+"timer3\stm32f1xx_hal_rcc_ex.o"
+"timer3\stm32f1xx_hal_dma.o"
+"timer3\stm32f1xx_hal_gpio.o"
+"timer3\stm32f1xx_hal_rcc.o"
+"timer3\stm32f1xx_hal_tim.o"
+"timer3\stm32f1xx_hal_flash.o"
+"timer3\stm32f1xx_hal_pwr.o"
+"timer3\stm32f1xx_hal_tim_ex.o"
+"timer3\main.o"
+"timer3\stm32f1xx_hal_msp.o"
+"timer3\stm32f1xx_it.o"
+"timer3\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Timer3\Timer3.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Timer3.map" -o Timer3\Timer3.axf
