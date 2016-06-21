@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"lcd graphic gphone\system_stm32f1xx.o"
+"lcd graphic gphone\stm32f1xx_hal_cortex.o"
+"lcd graphic gphone\stm32f1xx_hal_flash_ex.o"
+"lcd graphic gphone\stm32f1xx_hal_rcc_ex.o"
+"lcd graphic gphone\stm32f1xx_hal_rcc.o"
+"lcd graphic gphone\stm32f1xx_hal_tim.o"
+"lcd graphic gphone\stm32f1xx_hal_flash.o"
+"lcd graphic gphone\stm32f1xx_hal_pwr.o"
+"lcd graphic gphone\stm32f1xx_hal_dma.o"
+"lcd graphic gphone\stm32f1xx_hal_tim_ex.o"
+"lcd graphic gphone\stm32f1xx_hal_gpio.o"
+"lcd graphic gphone\stm32f1xx_hal.o"
+"lcd graphic gphone\startup_stm32f103xe.o"
+"lcd graphic gphone\stm32f1xx_it.o"
+"lcd graphic gphone\main.o"
+"lcd graphic gphone\stm32f1xx_hal_msp.o"
+"lcd graphic gphone\gphone.o"
+--library_type=microlib --strict --scatter "LCD GRAPHIC GPHONE\LCD GRAPHIC GPHONE.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD GRAPHIC GPHONE.map" -o "LCD GRAPHIC GPHONE\LCD GRAPHIC GPHONE.axf"

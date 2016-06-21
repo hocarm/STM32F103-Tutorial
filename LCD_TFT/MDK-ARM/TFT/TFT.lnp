@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"tft\system_stm32f1xx.o"
+"tft\stm32f1xx_hal_rcc_ex.o"
+"tft\stm32f1xx_hal_tim.o"
+"tft\stm32f1xx_hal.o"
+"tft\stm32f1xx_hal_rcc.o"
+"tft\stm32f1xx_hal_flash_ex.o"
+"tft\stm32f1xx_hal_gpio.o"
+"tft\stm32f1xx_hal_dma.o"
+"tft\stm32f1xx_hal_pwr.o"
+"tft\stm32f1xx_hal_cortex.o"
+"tft\stm32f1xx_hal_flash.o"
+"tft\stm32f1xx_hal_tim_ex.o"
+"tft\stm32f1xx_it.o"
+"tft\stm32f1xx_hal_msp.o"
+"tft\main.o"
+"tft\startup_stm32f103xe.o"
+--library_type=microlib --strict --scatter "TFT\TFT.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TFT.map" -o TFT\TFT.axf

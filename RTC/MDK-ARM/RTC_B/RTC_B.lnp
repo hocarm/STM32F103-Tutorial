@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"rtc_b\startup_stm32f103xe.o"
+"rtc_b\stm32f1xx_hal_msp.o"
+"rtc_b\stm32f1xx_it.o"
+"rtc_b\main.o"
+"rtc_b\stm32f1xx_hal_flash.o"
+"rtc_b\stm32f1xx_hal_rtc.o"
+"rtc_b\stm32f1xx_hal_flash_ex.o"
+"rtc_b\stm32f1xx_hal_cortex.o"
+"rtc_b\stm32f1xx_hal_tim_ex.o"
+"rtc_b\stm32f1xx_hal.o"
+"rtc_b\stm32f1xx_hal_rcc.o"
+"rtc_b\stm32f1xx_hal_gpio.o"
+"rtc_b\stm32f1xx_hal_rcc_ex.o"
+"rtc_b\stm32f1xx_hal_dma.o"
+"rtc_b\stm32f1xx_hal_pwr.o"
+"rtc_b\stm32f1xx_hal_rtc_ex.o"
+"rtc_b\stm32f1xx_hal_tim.o"
+"rtc_b\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "RTC_B\RTC_B.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RTC_B.map" -o RTC_B\RTC_B.axf

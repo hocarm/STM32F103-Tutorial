@@ -1,0 +1,13 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+G:\Electronic\MCU\STM32\STM32F103RCT6\TFT\MDK-ARM\TFT.uvproj
+Project File Date:  05/15/2016
+
+<h2>Output:</h2>
+Load "TFT\\TFT.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
