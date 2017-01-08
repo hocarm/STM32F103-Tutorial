@@ -24,3 +24,4 @@ lcd graphic gphone\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cor
 lcd graphic gphone\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 lcd graphic gphone\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 lcd graphic gphone\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+lcd graphic gphone\main.o: ../Inc/gphone.h

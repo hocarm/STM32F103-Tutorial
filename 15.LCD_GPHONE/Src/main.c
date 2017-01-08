@@ -34,7 +34,43 @@
 #include "stm32f1xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-
+/* Ket noi chan
+	STM32F1					LCD
+	PA0							CS
+	PA1							SCK
+	PA2							SDA
+	PA3							A0
+	Cap nguon chan 9-10, nguon den nen LCD 3v3
+	-----------------------------------
+	So thu tu chan LCD Gphone
+// Pin 		Chuc nang
+// 1 			GND
+// 2			RST
+// 3			SCK
+// 4			A0(C/D)
+// 5			LED K+ (3.3V)
+// 6			LED A (GND)
+// 7			SDA
+// 8			CS
+// 9			VCC
+// 10			GND
+	-----------------------------------
+- Mot so lenh hien thi cho GLCD:
+	1. lcd_write(0,0xC8); //Hien thi nguoc, 0xC0 - Binh thuong
+	2. lcd_write(0,0xA7); //Hien thi am ban, 0xA6 - Binh thuong
+	3. lcd_write(0,0xA5); //Hien thi all pixel, 0xA4 - Binh thuong
+- Cac ham giao tiep GLCD:
+	1. lcd_init(); //Khoi tao GLCD
+	2. lcd_write(CD, DATA_BYTE); 
+		//CD Select: 0 - Command, 1 - Display Data
+		//DATA_BYTE: Du lieu can ghi vao LCD
+	3. lcd_clear(); //Xoa man hinh
+	4. lcd_gotoxy(X, Y);
+		//X la vi tri hien thi 0-20 (Text font 5x7), Graphic 0-127
+		//Y la dong hien thi 0-7
+	5. lcd_putchar('Data_ASCII'); //Hien thi mot ky tu ASCII len man hinh
+	5. lcd_puts("String"); //Hien thi mot chuoi len man hinh */
+#include "gphone.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -87,7 +123,9 @@ int main(void)
 
   /* USER CODE BEGIN 3 */
 	lcd_gotoxy(0,0);
-	lcd_puts("12345678901234567890123456");
+	lcd_puts("      hocarm.org   ");
+	lcd_gotoxy(0,2);
+	lcd_puts("   while(1){Share()}   ");
 	HAL_Delay(5000);
 	lcd_clear();
 	HAL_Delay(1000);		

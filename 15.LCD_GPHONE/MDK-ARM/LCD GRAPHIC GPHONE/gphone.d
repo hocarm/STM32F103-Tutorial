@@ -1,4 +1,4 @@
-lcd graphic gphone\gphone.o: GPHONE\GPHONE.c
+lcd graphic gphone\gphone.o: GPHONE\gphone.c
 lcd graphic gphone\gphone.o: GPHONE\GPHONE.h
 lcd graphic gphone\gphone.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 lcd graphic gphone\gphone.o: ../Inc/stm32f1xx_hal_conf.h
