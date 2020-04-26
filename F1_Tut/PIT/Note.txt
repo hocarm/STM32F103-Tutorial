@@ -1,0 +1,4 @@
+https://tapit.vn/tinh-nang-usb-hid-tren-stm32f103-chuot-may-tinh/ ->lack of code
+https://tapit.vn/file-transfer-ftp-sim800c-stm32f103/ -> lack of code
+https://tapit.vn/tinh-nang-usb-hid-tren-stm32f103-ban-phim/ -> lack of code
+https://tapit.vn/chuc-nang-lowpower-mode-cua-mcu-stm32f103c8t6/ -> lack of code
